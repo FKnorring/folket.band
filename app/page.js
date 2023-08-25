@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <Noise />
-      <main className="w-100 h-screen p-10 flex items-center justify-center">
-        <Image src="/folket.svg" alt="Folket" width={200} height={200} />
+      <main className="w-100 h-screen pt-20 flex justify-center items-start">
+        <Image src="/folket.svg" alt="Folket" width={80} height={80} />
       </main>
     </>
   );
