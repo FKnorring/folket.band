@@ -1,28 +1,31 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { TbBrandInstagram, TbBrandSpotify, TbMail } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 function MemberCard({ name, role, img, socials }) {
   return (
-    <div className="flex bg-black bg-opacity-10 p-4">
+    <motion.div className="flex bg-black bg-opacity-10 p-4 gap-2 snap-center">
       <Image src={`/${img}`} alt={name} width={200} height={200} />
       <div className="flex flex-col gap-2">
-        <p className="text-lg font-semibold">{name}</p>
+        <p className="text-lg font-semibold truncate">{name}</p>
         <p>{role}</p>
         <div className="flex gap-2 mt-auto">
           {socials.instagram && (
-            <a>
+            <a role="button" className="svg-glow">
               <TbBrandInstagram size={24} />
             </a>
           )}
           {socials.email && (
-            <a>
+            <a role="button" className="svg-glow">
               <TbMail size={24} />
             </a>
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
