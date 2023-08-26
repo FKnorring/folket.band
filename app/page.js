@@ -16,6 +16,7 @@ export default function Home() {
           height={80}
         />
         <Socials />
+        <Image src={"/folket_evil.png"} alt="Folket" width={250} height={250} />
       </main>
     </>
   );
