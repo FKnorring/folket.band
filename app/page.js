@@ -13,6 +13,7 @@ export default function Home() {
           <a
             role="button"
             href="https://www.instagram.com/folket.band/"
+            target="_blank"
             aria-label="Folket Instagram"
           >
             <TbBrandInstagram size={32} role="button" />
