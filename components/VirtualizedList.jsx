@@ -72,13 +72,11 @@ function VirtualizedList({ children }) {
     let intervalId;
 
     if (autoScroll) {
-      // Set the interval only if autoScroll is true
       intervalId = setInterval(() => {
         setI((prevI) => prevI + 1);
-      }, autoScrollInterval); // Change index every 3 seconds
+      }, autoScrollInterval);
     }
 
-    // Cleanup interval on unmount or if autoScroll becomes false
     return () => clearInterval(intervalId);
   }, [autoScroll]);
 
