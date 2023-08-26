@@ -9,6 +9,7 @@ function MemberCard({ name, role, img, socials }) {
   return (
     <motion.div className="flex rounded p-4 gap-2">
       <Image
+        draggable={false}
         src={`/${img}`}
         alt={name}
         height={200}
