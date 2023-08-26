@@ -22,12 +22,22 @@ function MemberCard({ name, role, img, socials }) {
         <p>{role}</p>
         <div className="flex gap-2 mt-auto">
           {socials.instagram && (
-            <a role="button" className="svg-glow">
+            <a
+              role="button"
+              href={`https://www.instagram.com/${socials.instagram}`}
+              target="_blank"
+              className="svg-glow"
+            >
               <TbBrandInstagram size={24} />
             </a>
           )}
           {socials.email && (
-            <a role="button" className="svg-glow">
+            <a
+              role="button"
+              href={`mailto:${socials.email}`}
+              target="_blank"
+              className="svg-glow"
+            >
               <TbMail size={24} />
             </a>
           )}
