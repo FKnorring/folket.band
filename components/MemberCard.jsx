@@ -7,9 +7,16 @@ import { motion } from "framer-motion";
 
 function MemberCard({ name, role, img, socials }) {
   return (
-    <motion.div className="flex bg-black bg-opacity-10 p-4 gap-2 snap-center">
-      <Image src={`/${img}`} alt={name} width={200} height={200} />
-      <div className="flex flex-col gap-2">
+    <motion.div className="flex rounded p-4 gap-2">
+      <Image
+        src={`/${img}`}
+        alt={name}
+        height={200}
+        width={200}
+        style={{ objectFit: "cover" }}
+        className="h-[200px] w-auto aspect-square rounded-xl"
+      />
+      <div className="flex flex-col">
         <p className="text-lg font-semibold truncate">{name}</p>
         <p>{role}</p>
         <div className="flex gap-2 mt-auto">
