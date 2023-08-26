@@ -18,6 +18,8 @@
 
 .blend {
   opacity: 0.15;
+  aspect-ratio: auto 1 / 1;
+  min-height: 100dvh;
 }
 
 body {
@@ -25,6 +27,8 @@ body {
   background: url("/wwwatercolor.webp");
   backdrop-filter: blur(50px);
   animation: pan 20s alternate infinite ease;
+  max-height: 100dvh;
+  overflow: hidden;
 }
 
 
