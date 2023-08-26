@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import MemberCard from "./MemberCard"; // Import your MemberCard component
+import MemberCard from "./MemberCard";
 import VirtualizedList from "./VirtualizedList";
 
 const Carousel = ({ members }) => {
