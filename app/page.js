@@ -18,6 +18,13 @@ export default function Home() {
           height={80}
         />
         <Socials />
+        <div className="mb-10" />
+        <h1 className="text-center text-4xl mb-5 flex items-center gap-2 select-none">
+          Vi är{" "}
+          <span className="text-5xl font-semibold display italic svg-glow">
+            FOLKET
+          </span>
+        </h1>
         <Carousel members={Object.values(members)} />
       </main>
     </>

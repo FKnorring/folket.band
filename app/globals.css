@@ -53,3 +53,7 @@ body {
   scale: 1.025;
   filter: drop-shadow(-32px 32px 16px rgba(255,255,255,0.22));
 }
+
+.display {
+  font-family: 'Cascadia Code', monospace;
+}

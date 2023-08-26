@@ -4,10 +4,10 @@ import React, { useMemo, useState, useRef, useEffect } from "react";
 import { animate, motion, useMotionValue } from "framer-motion";
 
 const range = [-3, -2, -1, 0, 1, 2, 3];
-const autoScrollInterval = 6000;
-const reEnableScrollTimeout = 2000;
+const autoScrollInterval = 8000;
+const reEnableScrollTimeout = 8000;
 const elemWidth = 480;
-const margin = 8;
+const margin = 20;
 const totalWidth = elemWidth + margin * 2;
 
 function ListItem({ index, x, renderItem, onDragEnd }) {
@@ -39,7 +39,7 @@ function VirtualizedList({ children }) {
   const x = useMotionValue(0);
   const transition = { type: "spring", stiffness: 300, damping: 60 };
 
-  const getNewX = () => -index * totalWidth;
+  const getNewX = () => -index * totalWidth + margin;
 
   const onDragEnd = (e, dragProps) => {
     const cWidth = totalWidth;
@@ -83,7 +83,7 @@ function VirtualizedList({ children }) {
   return (
     <motion.div
       ref={ref}
-      className="relative w-full h-[230px] overflow-hidden bg-black bg-opacity-5"
+      className="relative w-full h-[240px] overflow-hidden"
       onMouseEnter={() => setAutoScroll(false)}
       onMouseLeave={() => setAutoScroll(true)}
     >
