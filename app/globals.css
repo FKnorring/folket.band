@@ -45,4 +45,11 @@ body {
 
 .svg-glow {
   filter: drop-shadow(-64px 64px 32px rgba(255,255,255,0.14));
+  scale: 1;
+  transition: all 0.5s ease-out;
+}
+
+.svg-glow:hover {
+  scale: 1.025;
+  filter: drop-shadow(-32px 32px 16px rgba(255,255,255,0.22));
 }
