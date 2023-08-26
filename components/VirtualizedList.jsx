@@ -86,6 +86,8 @@ function VirtualizedList({ children }) {
     <motion.div
       ref={ref}
       className="relative w-full h-[230px] overflow-hidden bg-black bg-opacity-5"
+      onMouseEnter={() => setAutoScroll(false)}
+      onMouseLeave={() => setAutoScroll(true)}
     >
       {range.map((rVal) => (
         <ListItem
