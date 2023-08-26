@@ -1,13 +1,14 @@
 import Noise from "@/components/Noise";
 import { Socials } from "@/components/Socials";
 import Image from "next/image";
-import { TbBrandInstagram, TbBrandSpotify, TbMail } from "react-icons/tb";
+import members from "@/static/members.json";
+import MemberCard from "@/components/MemberCard";
 
 export default function Home() {
   return (
     <>
       <Noise />
-      <main className="w-100 h-screen pt-20 gap-10 flex flex-col justify-start items-center">
+      <main className="w-100 h-screen pt-20 gap-10 flex flex-col justify-start items-center overflow-y-scroll">
         <Image
           className="svg-glow"
           src="/folket.svg"
@@ -16,7 +17,17 @@ export default function Home() {
           height={80}
         />
         <Socials />
-        <Image src={"/folket_evil.png"} alt="Folket" width={250} height={250} />
+        {Object.entries(members)?.map(([key, { name, role, img, socials }]) => {
+          return (
+            <MemberCard
+              key={key}
+              name={name}
+              role={role}
+              img={img}
+              socials={socials}
+            />
+          );
+        })}
       </main>
     </>
   );

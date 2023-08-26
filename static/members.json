@@ -1,0 +1,51 @@
+{
+    "jakob": {
+        "name": "Jakob Hasselqvist Haglund",
+        "socials": {
+            "email": "jakob.hh@gmail.com",
+            "instagram": "jakobhh"
+        },
+        "img": "jakob.jpg",
+        "role": "Sångare / Gitarrist"
+    },
+
+    "agnes": {
+        "name": "Agnes Sidemo",
+        "socials": {
+            "email": "agnieska@gmail.com",
+            "instagram": "agnieska"
+        },
+        "img": "agnes.jpg",
+        "role": "Sångerska"
+    },
+
+    "filip": {
+        "name": "Filip von Knorring",
+        "socials": {
+            "email": "fille.vk@gmail.com",
+            "instagram": "filipvonknorring"
+        },
+        "img": "filip.jpg",
+        "role": "Bassist"
+    },
+
+    "oliver": {
+        "name": "Oliver Kiss",
+        "socials": {
+            "email": "oliver.kiss@gmail.com",
+            "instagram": "oliverkiss"
+        },
+        "img": "oliver.jpg",
+        "role": "Trummis"
+    },
+
+    "andrej": {
+        "name": "Andrej Tomicic",
+        "socials": {
+            "email": "andrej.tomicic@gmail.com",
+            "instagram": "andrejtomicic"
+        },
+        "img": "andrej.jpg",
+        "role": "Gitarrist"
+    }
+}
