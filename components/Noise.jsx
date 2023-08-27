@@ -1,7 +1,7 @@
 export default function Noise() {
   return (
     <svg
-      className="noise absolute"
+      className="noise"
       viewBox="0 0 400 400"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -14,7 +14,7 @@ export default function Noise() {
         />
       </filter>
 
-      <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+      <rect width="100%" height="100dvh" filter="url(#noiseFilter)" />
     </svg>
   );
 }

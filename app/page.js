@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Noise />
       <main className="w-full h-screen">
-        <div className="w-full h-full overflow-y-scroll py-20 flex flex-col gap-10 items-center">
+        <div className="w-full h-full overflow-y-scroll py-20 flex flex-col gap-10 items-center text-white">
           <Image
             className="svg-glow"
             src="/folket.svg"

@@ -76,10 +76,13 @@
 
 .noise {
   opacity: 0.15;
-  aspect-ratio: auto 1 / 1;
-  min-height: 100dvh;
+  min-height: 120dvh;
+  width: auto;
   pointer-events: none;
   z-index: -100;
+  position: absolute;
+  inset: 0;
+  top: -20dvh;
 }
 
 body {
