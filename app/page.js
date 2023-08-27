@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Noise />
       <main className="w-full h-screen">
-        <div className="w-full h-full overflow-y-scroll py-20 flex flex-col gap-10 items-center text-white">
+        <div className="w-full h-full overflow-y-scroll pt-20 pb-40 flex flex-col gap-10 items-center text-white">
           <Image
             className="svg-glow"
             src="/folket.svg"
@@ -32,7 +32,7 @@ export default function Home() {
               FOLKET
             </span>
           </h1>
-          <div className="w-full">
+          <div className="w-full mb-20">
             <Carousel members={Object.values(members)} />
           </div>
         </div>
