@@ -3,6 +3,7 @@ import React from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { TbMailFilled } from "react-icons/tb";
 
 function ContactForm() {
   return (
@@ -20,8 +21,17 @@ function ContactForm() {
           type="email"
           placeholder="Email"
         />
-        <Button>Skicka</Button>
+        <Button disabled className="pe-5 select-none">
+          <TbMailFilled className="mr-2 h-4 w-4" />
+          Skicka
+        </Button>
       </div>
+      <p className="text-sm text-muted-foreground">
+        Eller nå oss på{" "}
+        <a href="mailto:folket@band.se">
+          <span className="font-semibold underline">folket@band.se</span>
+        </a>
+      </p>
     </form>
   );
 }
