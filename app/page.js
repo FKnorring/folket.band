@@ -12,19 +12,18 @@ export default function Home() {
     <>
       <Noise />
       <main className="w-full h-screen">
-        <div className="w-full h-full overflow-y-scroll pt-20 pb-40 flex flex-col gap-10 items-center text-white">
-          <Image
-            className="svg-glow"
-            src="/folket.svg"
-            alt="Folket"
-            width={80}
-            height={80}
-          />
-          <Socials />
-          <div className="mb-10" />
-          <div className="max-w-[1200px]">
-            <ContactForm />
+        <div className="w-full h-full overflow-y-scroll flex flex-col gap-10 items-center text-white">
+          <div className="min-h-screen flex flex-col items-center justify-center gap-20">
+            <Image
+              className="svg-glow"
+              src="/folket.svg"
+              alt="Folket"
+              width={120}
+              height={120}
+            />
+            <Socials />
           </div>
+
           <div className="mb-10" />
           <h1 className="text-center text-4xl mb-5 flex items-center gap-2 select-none">
             Vi är{" "}
@@ -32,7 +31,7 @@ export default function Home() {
               FOLKET
             </span>
           </h1>
-          <div className="w-full mb-20">
+          <div className="w-full mb-40">
             <Carousel members={Object.values(members)} />
           </div>
         </div>
