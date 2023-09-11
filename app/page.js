@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Noise />
       <main className="w-full h-screen">
-        <div className="w-full h-full overflow-y-scroll flex flex-col gap-10 items-center text-white">
+        <div className="w-full h-full overflow-hidden flex flex-col gap-10 items-center text-white">
           <div className="min-h-[100dvh] flex flex-col items-center justify-center gap-20">
             <Image
               className="svg-glow"
