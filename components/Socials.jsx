@@ -5,9 +5,9 @@ export const Socials = () => (
   <div className="flex items-center gap-10">
     <a
       role="button"
-      href="https://www.instagram.com/folket.band/"
+      href="https://open.spotify.com/artist/4Ouwq9KjnPW9gjPn2BW76a?si=JlYlPbklRI-AHZSyOULNQw"
       target="_blank"
-      aria-label="Folket Instagram"
+      aria-label="Folket Spotify"
     >
       <TbBrandSpotify className="svg-glow" size={32} role="button" />
     </a>
@@ -21,7 +21,7 @@ export const Socials = () => (
     </a>
     <a
       role="button"
-      href="mailto:folket@band.com"
+      href="mailto:folket.mgmt@gmail.com"
       target="_blank"
       aria-label="Folket Mail"
     >
