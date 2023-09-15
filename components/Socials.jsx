@@ -26,19 +26,19 @@ export const Socials = () => (
     </a>
     <a
       role="button"
-      href="mailto:folket.mgmt@gmail.com"
-      target="_blank"
-      aria-label="Folket Mail"
-    >
-      <TbMail className="svg-glow" size={32} role="button" />
-    </a>
-    <a
-      role="button"
       href="https://www.youtube.com/watch?v=ZAeSO3bHbiI"
       target="_blank"
       aria-label="Folket Youtube"
     >
       <TbBrandYoutube className="svg-glow" size={32} role="button" />
+    </a>
+    <a
+      role="button"
+      href="mailto:folket.mgmt@gmail.com"
+      target="_blank"
+      aria-label="Folket Mail"
+    >
+      <TbMail className="svg-glow" size={32} role="button" />
     </a>
   </div>
 );
